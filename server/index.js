@@ -5,6 +5,8 @@ const routes = require('./routes');
 const bodyParser = require('body-parser');
 const configs = require('./config');
 
+require('dotenv').config({ path: 'variables.env' });
+
 // const db = require('./config/database');
 
 // db.authenticate()
@@ -51,10 +53,10 @@ app.use('/', routes())
 
 // port and host for app
 const host = process.env.HOST || '0.0.0.0';
-const  port = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
 
 
 app.listen(port, host, () =>{
-    console.log('server running in port')
+    console.log('server is running ')
 })
