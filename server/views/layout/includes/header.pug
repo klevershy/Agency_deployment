@@ -1,0 +1,12 @@
+header  
+    .navegacion
+        .container
+            .row.justify-content-center.justify-content-md-between.align-items-center.py-4
+                .col-md-6.col-md-4
+                    a(href="/")
+                        img(src="/img/logo.svg", alt="Logo travel Agency" class="img-fluid")
+                .col-md-6.col.-md-4
+                    .nav.justify-content-center.justify-content-md-end
+                        a.nav-link(href="/nosotros", class=(currentPage === '/nosotros' ? 'active' : '')) About
+                        a.nav-link(href="/destinations", class=(currentPage === '/destinations' ? 'active' : '')) Destinations
+                        a.nav-link(href="/reviews", class=(currentPage === '/reviews' ? 'active' : '')) Reviews
